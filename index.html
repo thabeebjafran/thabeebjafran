@@ -28,9 +28,9 @@
         
         footer { text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid #e9ecef; color: #666; }
         
-        /* Strict Tableau Frame Lockdown */
-        .tableau-container { width: 100%; max-width: 1200px; height: 850px; overflow: hidden; margin-top: 20px; border-radius: 8px; background: #fff; border: 1px solid #e1e4e8; }
-        .tableauPlaceholder { width: 100% !important; height: 100% !important; }
+        /* Direct Clean Iframe Styling */
+        .tableau-iframe-container { width: 100%; max-width: 1200px; height: 850px; margin-top: 20px; border-radius: 8px; overflow: hidden; border: 1px solid #e1e4e8; background: #fff; }
+        .tableau-iframe-container iframe { width: 100%; height: 100%; border: none; }
     </style>
 </head>
 <body>
@@ -40,7 +40,7 @@
         <div class="links">
             <a href="https://public.tableau.com/profile/thabeebjafran" target="_blank">Tableau Public</a> |
             <a href="https://github.com/thabeebjafran" target="_blank">GitHub</a> |
-            <a href="https://credly.com/users/thabeebjafran" target="_blank">Credly</a>
+            <a href="https://www.credly.com/users/thabeebjafran" target="_blank">Credly</a>
         </div>
         <br>
         <a href="ThabeebJafranResume.pdf" class="btn-primary" target="_blank">📄 Download Resume</a>
@@ -55,11 +55,10 @@
         <h2 class="section-title">Live Data Visualization</h2>
         <p>Interact with the dashboard below to explore my data modeling and visualization capabilities.</p>
         
-        <!-- TABLEAU EMBED START WRAPPED -->
-        <div class="tableau-container">
-            <div class='tableauPlaceholder' id='viz1785692849575' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Br&#47;BreakingBadDashboard-TVSeriesInsights&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BreakingBadDashboard-TVSeriesInsights&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Br&#47;BreakingBadDashboard-TVSeriesInsights&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1785692849575');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height='850px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <!-- NATIVE IFRAME EMBED -->
+        <div class="tableau-iframe-container">
+            <iframe src="https://public.tableau.com/views/BreakingBadDashboard-TVSeriesInsights/Dashboard1?:embed=yes&:showVizHome=no&:toolbar=yes"></iframe>
         </div>
-        <!-- TABLEAU EMBED END -->
 
     </section>
 
@@ -85,7 +84,7 @@
             <h3>Credit Card & Customer Shopping Analytics</h3>
             <span class="tag">Data Analytics</span> <span class="tag">Power BI / SQL</span>
             <p>Aggregated 656K+ transactions into an executive dashboard tracking $55.3M in revenue. Used DAX modeling to uncover customer segments generating 93% of overall sales.</p>
-            <a class="btn-primary" href="url?id=5" target="_blank">View on GitHub</a>
+            <a class="btn-primary" href="https://github.com/thabeebjafran/credit-card-financial-dashboard" target="_blank">View on GitHub</a>
         </div>
 
         <div class="card">
