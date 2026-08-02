@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thabeeb Jafran - Portfolio</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 40px 20px; color: #333; background-color: #f8f9fa; }
-        header { text-align: center; border-bottom: 2px solid #e9ecef; padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { margin-bottom: 5px; color: #111; }
-        .subtitle { font-size: 1.1em; color: #555; font-weight: 600; }
-        .links { margin-top: 15px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 40px 20px; color: #333; background-color: #f8f9fa; }
+        header { text-align: center; border-bottom: 2px solid #e9ecef; padding-bottom: 30px; margin-bottom: 30px; }
+        h1 { margin-bottom: 5px; color: #111; font-size: 2.5em; }
+        .subtitle { font-size: 1.2em; color: #555; font-weight: 600; margin-bottom: 20px; }
         .links a { margin: 0 10px; color: #0066cc; text-decoration: none; font-weight: bold; }
         .links a:hover { text-decoration: underline; }
-        .card { background: #ffffff; padding: 20px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #e1e4e8; box-shadow: 0 2px 4px rgba(0,0,0,0.04); }
+        .btn-primary { display: inline-block; background: #0066cc; color: white !important; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 15px; transition: background 0.2s; }
+        .btn-primary:hover { background: #004999; }
+        .section-title { border-bottom: 2px solid #e9ecef; padding-bottom: 10px; margin-top: 40px; color: #111; }
+        .card { background: #ffffff; padding: 25px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #e1e4e8; box-shadow: 0 2px 4px rgba(0,0,0,0.04); }
         .card h3 { margin-top: 0; color: #111; }
-        .tag { background: #eef2f7; color: #0366d6; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; font-weight: 600; display: inline-block; margin-right: 5px; margin-bottom: 10px; }
-        .skills-list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; }
-        .skills-list li { background: #eef2f7; padding: 6px 12px; border-radius: 20px; font-size: 0.9em; font-weight: 500; }
-        a.btn { display: inline-block; background: #0066cc; color: white; padding: 8px 16px; border-radius: 5px; text-decoration: none; font-size: 0.9em; font-weight: bold; margin-top: 10px; }
-        a.btn:hover { background: #004999; }
+        .tag { background: #eef2f7; color: #0366d6; padding: 5px 10px; border-radius: 4px; font-size: 0.85em; font-weight: 600; display: inline-block; margin-right: 5px; margin-bottom: 10px; }
+        .skills-list { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; }
+        .skills-list li { background: #eef2f7; padding: 8px 16px; border-radius: 20px; font-size: 0.9em; font-weight: 500; color: #333; }
+        .tableau-placeholder { background: #eef2f7; border: 2px dashed #0066cc; padding: 40px; text-align: center; border-radius: 8px; margin-bottom: 20px; }
+        footer { text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid #e9ecef; color: #666; }
     </style>
 </head>
 <body>
@@ -30,58 +32,87 @@
             <a href="https://github.com/thabeebjafran" target="_blank">GitHub</a> |
             <a href="https://www.credly.com/users/thabeebjafran" target="_blank">Credly</a>
         </div>
+        <br>
+        <!-- The href here must exactly match the name of the PDF you upload to GitHub -->
+        <a href="ThabeebJafranResume.pdf" class="btn-primary" target="_blank">📄 Download Resume</a>
     </header>
 
     <section>
-        <h2>About Me</h2>
+        <h2 class="section-title">About Me</h2>
         <p>Data-driven professional with 5+ years of experience across Fintech, E-commerce, and Logistics. Specialized in converting complex datasets into actionable strategic decisions using SQL, Python, Power BI, and Tableau, alongside leading Agile project lifecycles.</p>
     </section>
 
     <section>
-        <h2>Featured Projects</h2>
+        <h2 class="section-title">Live Data Visualization</h2>
+        <p>Interact with the dashboard below to explore my data modeling and visualization capabilities.</p>
+        
+        <!-- PASTE YOUR TABLEAU EMBED CODE OVER THIS ENTIRE DIV -->
+        <div class="tableau-placeholder">
+            <h3>📊 Embed Your Tableau Dashboard Here</h3>
+            <p>Go to your Tableau Public profile, open your best dashboard, click the <strong>Share</strong> icon (top right), copy the <strong>Embed Code</strong>, and paste it here replacing this box.</p>
+        </div>
+        <!-- END TABLEAU PLACEHOLDER -->
+
+    </section>
+
+    <section>
+        <h2 class="section-title">AI & Workflow Automation</h2>
+        <div class="card">
+            <h3>Automated Pipelines & Prompt Engineering</h3>
+            <p>Beyond traditional data analysis, I design and deploy automated workflows and AI agents to eliminate manual effort, streamline compliance, and scale business operations.</p>
+            <div style="margin-top: 15px;">
+                <span class="tag">n8n</span>
+                <span class="tag">Google Apps Script</span>
+                <span class="tag">Apify</span>
+                <span class="tag">Prompt Chaining</span>
+                <span class="tag">AI Agent Design</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Featured Projects</h2>
         
         <div class="card">
             <h3>Credit Card & Customer Shopping Analytics</h3>
             <span class="tag">Data Analytics</span> <span class="tag">Power BI / SQL</span>
             <p>Aggregated 656K+ transactions into an executive dashboard tracking $55.3M in revenue. Used DAX modeling to uncover customer segments generating 93% of overall sales.</p>
-            <a class="btn" href="https://github.com/thabeebjafran/credit-card-financial-dashboard" target="_blank">View Project</a>
+            <a class="btn-primary" href="https://github.com/thabeebjafran/credit-card-financial-dashboard" target="_blank">View on GitHub</a>
         </div>
 
         <div class="card">
             <h3>Mobile Banking Application - Financial Analysis</h3>
             <span class="tag">Business Analysis</span> <span class="tag">$600K Budget</span>
             <p>Managed compliance and financial models across a 14-month project lifecycle, shifting a projected -20% ROI into sustainable value while preserving 100% regulatory compliance.</p>
-            <a class="btn" href="https://github.com/thabeebjafran/mobile-banking-financial-analysis" target="_blank">View Project</a>
+            <a class="btn-primary" href="https://github.com/thabeebjafran/mobile-banking-financial-analysis" target="_blank">View on GitHub</a>
         </div>
 
         <div class="card">
             <h3>AHI - Marketing Analytics App</h3>
             <span class="tag">Project Lead</span> <span class="tag">$250K Budget</span>
             <p>Led cross-functional teams through the SDLC for a hybrid analytics app supporting 4M+ active users. Managed sprint planning in Jira to yield a 20% post-launch ROI.</p>
-            <a class="btn" href="https://github.com/thabeebjafran/ahi-marketing-analytics-app" target="_blank">View Project</a>
-        </div>
-
-        <div class="card">
-            <h3>Plant Pals - Operations Project</h3>
-            <span class="tag">Operations</span> <span class="tag">$75K Budget</span>
-            <p>Architected project charter and WBS for a B2B expansion. Synchronized 40+ deliverables across 5 departments via Asana and Jira, achieving 95% SLA delivery.</p>
-            <a class="btn" href="https://github.com/thabeebjafran/plant-pals-operations-project" target="_blank">View Project</a>
+            <a class="btn-primary" href="https://github.com/thabeebjafran/ahi-marketing-analytics-app" target="_blank">View on GitHub</a>
         </div>
     </section>
 
     <section>
-        <h2>Core Skills</h2>
+        <h2 class="section-title">Core Skills</h2>
         <ul class="skills-list">
             <li>SQL / PostgreSQL</li>
             <li>Python</li>
-            <li>Power BI</li>
+            <li>Power BI & DAX</li>
             <li>Tableau</li>
-            <li>DAX</li>
             <li>Agile / Scrum</li>
             <li>Jira & Confluence</li>
             <li>Risk Tracking</li>
-            <li>n8n & Workflow Automation</li>
         </ul>
     </section>
+
+    <footer>
+        <h2>Let's Connect</h2>
+        <p>Interested in collaborating or discussing opportunities?</p>
+        <a href="mailto:thabeebjafran@gmail.com" class="btn-primary">✉️ Email Me</a>
+        <p style="margin-top: 30px; font-size: 0.9em;">&copy; 2026 Thabeeb Jafran.</p>
+    </footer>
 </body>
 </html>
