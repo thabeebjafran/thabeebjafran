@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thabeeb Jafran - Portfolio</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 40px 20px; color: #333; background-color: #f8f9fa; }
+        /* Widened the website from 900px to 1250px to fit the dashboard perfectly */
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 1250px; margin: 0 auto; padding: 40px 20px; color: #333; background-color: #f8f9fa; }
+        
         header { text-align: center; border-bottom: 2px solid #e9ecef; padding-bottom: 30px; margin-bottom: 30px; }
         h1 { margin-bottom: 5px; color: #111; font-size: 2.5em; }
         .subtitle { font-size: 1.2em; color: #555; font-weight: 600; margin-bottom: 20px; }
@@ -14,6 +16,10 @@
         .btn-primary { display: inline-block; background: #0066cc; color: white !important; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 15px; transition: background 0.2s; }
         .btn-primary:hover { background: #004999; }
         .section-title { border-bottom: 2px solid #e9ecef; padding-bottom: 10px; margin-top: 40px; color: #111; }
+        
+        /* Kept text width narrower so it remains easy to read */
+        p, .card, .skills-list { max-width: 950px; }
+        
         .card { background: #ffffff; padding: 25px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #e1e4e8; box-shadow: 0 2px 4px rgba(0,0,0,0.04); }
         .card h3 { margin-top: 0; color: #111; }
         .tag { background: #eef2f7; color: #0366d6; padding: 5px 10px; border-radius: 4px; font-size: 0.85em; font-weight: 600; display: inline-block; margin-right: 5px; margin-bottom: 10px; }
@@ -21,8 +27,8 @@
         .skills-list li { background: #eef2f7; padding: 8px 16px; border-radius: 20px; font-size: 0.9em; font-weight: 500; color: #333; }
         footer { text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid #e9ecef; color: #666; }
         
-        /* Fix for Tableau Overlap */
-        .tableauPlaceholder { width: 100% !important; min-height: 850px !important; overflow: hidden; margin-top: 20px; }
+        /* Exact dimensions to prevent scrollbars */
+        .tableauPlaceholder { width: 100% !important; height: 900px !important; overflow: hidden !important; margin-top: 20px; border-radius: 8px; }
     </style>
 </head>
 <body>
@@ -31,7 +37,7 @@
         <p class="subtitle">Business Analyst | Junior Project Manager | Data Analyst</p>
         <div class="links">
             <a href="https://public.tableau.com/profile/thabeebjafran" target="_blank">Tableau Public</a> |
-            <a href="https://github.com/thabeebjafran" target="_blank">GitHub</a> |
+            <a href="url?id=1" target="_blank">GitHub</a> |
             <a href="https://www.credly.com/users/thabeebjafran" target="_blank">Credly</a>
         </div>
         <br>
@@ -48,7 +54,7 @@
         <p>Interact with the dashboard below to explore my data modeling and visualization capabilities.</p>
         
         <!-- TABLEAU EMBED START -->
-        <div class='tableauPlaceholder' id='viz1785692849575' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Br&#47;BreakingBadDashboard-TVSeriesInsights&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BreakingBadDashboard-TVSeriesInsights&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Br&#47;BreakingBadDashboard-TVSeriesInsights&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1785692849575');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height='850px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <div class='tableauPlaceholder' id='viz1785692849575' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Br&#47;BreakingBadDashboard-TVSeriesInsights&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BreakingBadDashboard-TVSeriesInsights&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Br&#47;BreakingBadDashboard-TVSeriesInsights&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1785692849575');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height='900px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
         <!-- TABLEAU EMBED END -->
 
     </section>
